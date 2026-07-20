@@ -1,0 +1,44 @@
+h1 {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+span {
+    color: gray;
+}
+
+video {
+    width: 100%;
+    align-items: center;
+}
+
+p {
+    text-indent: 2em;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+    width: 100%;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    align-items: center;
+}
+
+#container {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+#scan {
+    box-sizing: content-box;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 0 auto;
+}

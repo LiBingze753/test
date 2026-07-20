@@ -1,0 +1,87 @@
+/* -------------------------header------------------------- */
+#header {
+    box-sizing: border-box;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+#header h1 {
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.4em;
+    font-family: "微软雅黑";
+}
+
+#header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* -------------------------content------------------------- */
+#content {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px auto;
+}
+
+
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: auto auto;
+    width: 100%;
+    border: 1px solid #acb9ea;
+}
+
+#form label {
+    font-size: 1em;
+}
+
+#form input[type="text"],
+#form select {
+    width: 200px;
+}
+
+
+#form input[type="submit"] {
+    font-size: 1em;
+    background-color: #879df0;
+    border: 2px solid #acb9ea;
+}
+
+#form input[type="reset"] {
+    font-size: 1em;
+}
+
+/* -------------------------sidebar------------------------- */
+#sidebar {
+    width: 100%;
+    margin: 10px auto;
+}
+
+#sidebar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#sidebar table td {
+    border: 2px solid #acb9ea;
+    padding: auto;
+    text-align: center;
+}
+#sidebar table th {
+    border: 2px solid #acb9ea;
+    padding: 10px;
+    background-color: #879df0;
+}
+
