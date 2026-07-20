@@ -1,3 +1,9 @@
+/* -------------------------container------------------------- */
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* -------------------------header------------------------- */
 #header {
     box-sizing: border-box;
@@ -40,7 +46,6 @@
     gap: 10px;
     margin: auto auto;
     width: 100%;
-    border: 1px solid #acb9ea;
 }
 
 #form label {
@@ -85,3 +90,11 @@
     background-color: #879df0;
 }
 
+/* -------------------------footer------------------------- */
+#footer footer {
+    background-color: gray;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin: 30px auto;
+}

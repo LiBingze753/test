@@ -9,72 +9,78 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>Tlias智能学习辅助系统</h1>
-        <a href="https://www.bilibili.com/video/BV1GJ411x7h7/?vd_source=37577706b08fadb24aed68a402e08097">退出登录</a>
-    </div>
-    <div id="content">
-        <form action="./save/" method="post" id="form">
-            <label for="name">姓名:</label>
-            <input type="text" id="name" name="name" placeholder="请输入姓名">
+    <div id="container">
+        <div id="header">
+            <h1>Tlias智能学习辅助系统</h1>
+            <a href="https://www.bilibili.com/video/BV1GJ411x7h7/?vd_source=37577706b08fadb24aed68a402e08097">退出登录</a>
+        </div>
+        <div id="content">
+            <form action="./save/" method="post" id="form">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" placeholder="请输入姓名">
 
 
-            <label for="gender">性别:</label>
-            <select id="gender" name="gender">
-                <option value="1">男</option>
-                <option value="2">女</option>
-            </select>
+                <label for="gender">性别:</label>
+                <select id="gender" name="gender">
+                    <option value="1">男</option>
+                    <option value="2">女</option>
+                </select>
 
 
-            <label for="position">职位:</label>
-            <select id="position" name="position">
-                <option value="1">讲师</option>
-                <option value="2">班主任</option>
-                <option value="3">咨询师</option>
-                <option value="4">学工主管</option>
-                <option value="5">教研主管</option>
-            </select>
+                <label for="position">职位:</label>
+                <select id="position" name="position">
+                    <option value="1">讲师</option>
+                    <option value="2">班主任</option>
+                    <option value="3">咨询师</option>
+                    <option value="4">学工主管</option>
+                    <option value="5">教研主管</option>
+                </select>
 
 
-            <input type="submit" value="查询">
+                <input type="submit" value="查询">
 
 
-            <input type="reset" value="清空">
-        </form>
-    </div>
-    <div id="sidebar">
-        <table>
-            <thead>
-                <tr>
-                    <th>姓名</th>
-                    <th>性别</th>
-                    <th>头像</th>
-                    <th>职位</th>
-                    <th>入职日期</th>
-                    <th>最后操作时间</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>张三</td>
-                    <td>男</td>
-                    <td><img class="avatar" width="50" height="50" src="./img/1.png" alt="头像"></td>
-                    <td>讲师</td>
-                    <td>2023-01-01</td>
-                    <td>2023-01-01 10:00:00</td>
-                    <td class="action">
-                        <button type="button">编辑</button>
-                        <button type="button">删除</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="footer">
-        <h1>
-        </h1>
-    </div>
+                <input type="reset" value="清空">
+            </form>
+        </div>
+        <div id="sidebar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>头像</th>
+                        <th>职位</th>
+                        <th>入职日期</th>
+                        <th>最后操作时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>张三</td>
+                        <td>男</td>
+                        <td><img class="avatar" width="50" height="50" src="./img/1.png" alt="头像"></td>
+                        <td>讲师</td>
+                        <td>2023-01-01</td>
+                        <td>2023-01-01 10:00:00</td>
+                        <td class="action">
+                            <button type="button">编辑</button>
+                            <button type="button">删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="footer">
+            <footer>
+                <span>
+                    公司地址：北京市海淀区海淀区
+                </span>
+                <br>
+                <span>
+                    版权所有：Tlias智能学习辅助系统
+                </span>
+            </footer>
+        </div>
 </body>
-
-</html>
