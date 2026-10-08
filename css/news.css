@@ -1,0 +1,20 @@
+a{
+    text-decoration: none;
+}
+
+span.time#time{
+    color: rgb(128, 128, 128);
+}
+
+p{
+    /* 缩进 */
+    text-indent: 2em; /* 缩进2个字符 */
+    /* 设置行高 */
+    line-height: 1.5; /* 行高：2倍行距 */
+}
+
+/* 整体版面设置 */
+#content{
+    width: 70%;
+    margin: 0 auto; /* 居中显示 */
+}

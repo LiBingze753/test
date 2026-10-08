@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tlias智能学习系统</title>
+    <link rel="stylesheet" href="./css/study_system.css">
+</head>
+<body>
+    <div id="container">
+        <h1>tlias智能学习系统</h1>
+        <a href = "#">退出登录</a>
+    </div>
+    
+    <div id="menu">
+        <!-- form表单：
+            action：表单数据提交的url地址
+            method：提交方法，get或post
+                get：将表单数据拼接在url后面，提交到服务器(默认方法)，形式为：url?name=value&name=value
+                    特点：
+                        1. 数据量小，适合提交简单的数据
+                        2. 数据在url中可见，不安全
+                        3. 数据不能超过2048个字符
+                post：将表单数据封装在http体中，提交到服务器,形式为：url
+                    特点：
+                        1. 数据量大，适合提交复杂的数据
+                        2. 数据在http体中，不可见，相对安全
+                        3. 数据没有长度限制
+                注意：get方法只能提交简单的数据，不能提交复杂的对象，如数组、对象等
+        -->
+        <form action="/save" method="post">
+            <!-- 表单元素：
+                input：输入框
+                    type：输入框的类型
+                        text：文本输入框
+                            number：数字输入框
+                            email：邮箱输入框
+                            url：url输入框
+                        password：密码输入框
+                            placeholder：占位框的提示信息
+                        radio：单选框
+                            label：单选框的标签
+                            name：单选框的名称
+                            value：单选框的值
+                        checkbox：复选框
+                            label：复选框的标签
+                            name：复选框的名称
+                            value：复选框的值
+                            placeholder：占位框的提示信息
+                        file：文件上传框
+                            name：文件上传框的名称
+                        date/time/datetime-local：日期选择框
+                            name：日期选择框的名称
+                            value：日期选择框的值
+                        submit：提交按钮
+                            value：按钮的文本
+                        reset：重置按钮
+                            value：按钮的文本
+                        button：按钮
+                            value：按钮的文本
+                        hidden：隐藏域
+                            name：隐藏域的名称
+                            value：隐藏域的值
+                    name：输入框的名称
+                    placeholder：占位框的提示信息
+
+                select：下拉选择框
+                    name：下拉选择框的名称
+                    option：下拉选择框的选项
+                    value：选项的值
+                textarea：文本域框
+                    name：文本域框的名称
+                    placeholder：占位框的提示信息
+                    rows：文本域框的行数
+                    cols：文本域框的列数
+
+            -->
+
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" placeholder="请输入姓名">
+            
+            <br>
+            
+            <label for="age">年龄：</label>
+            <input type="number" id="age" name="age" placeholder="请输入年龄">
+            
+            <br>
+
+            <br>
+
+            <label for="gender">性别：</label>
+            <label><input type="radio" id="male" name="gender" value="1">男</label>
+            <label><input type="radio" id="female" name="gender" value="0">女</label>
+            
+            <br>
+            
+            <label for="hobby">爱好：</label>
+            <label><input type="checkbox" name="hobby" value="1">足球</label>
+            <label><input type="checkbox" name="hobby" value="2">篮球</label>
+            <label><input type="checkbox" name="hobby" value="3">跑步</label>
+            <label><input type="checkbox" name="hobby" value="4">旅游</label>
+            
+            <br>
+            
+            <label for="image">图像：</label>
+            <input type="file" id="image" name="image">
+            
+            <br>
+            
+            <br>
+
+            <label for="birthday">生日：</label>
+            <input type="date" id="birthday" name="birthday">
+            
+            <br>
+            
+            <br>
+
+            <label for="time">时间：</label>
+            <input type="time" id="time" name="time"><br>
+
+            <br>
+
+            <label for="datetime">日期时间：</label>
+            <input type="datetime-local" id="datetime" name="datetime"><br>
+
+            <br>
+
+            <label for="education">学历：</label>
+            <select name="education" id="education">   
+                <option value="1">高中</option>
+                <option value="2">大专</option>
+                <option value="3">本科</option>
+                <option value="4">硕士</option>
+            </select>
+
+            <br>
+
+            <label for="description">描述：</label>
+            <textarea name="description" id="description" placeholder="请输入描述" rows="4" cols="30"></textarea><br>
+
+            <br>
+
+            <input type="hidden" name="id" value="1">
+
+            <br>
+
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+            <input type="button" value="按钮">
+
+        </form>
+    </div>
+
+    <div id="body">
+        
+    </div>
+    
+    <div id="footer">
+        
+    </div>
+</body>
+</html>

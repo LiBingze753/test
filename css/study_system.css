@@ -1,0 +1,42 @@
+#container{
+    box-sizing: auto;
+    background-color: #5f5f5f; /* 灰色背景 */
+
+
+    display: flex; /* 弹性布局 */
+
+    /* column : 垂直向 */
+    flex-direction: row; /* 水平布局 */
+
+    /* flex-start : 左对齐 */
+    /* flex-end : 右对齐; */
+    /* center : 居中对齐; */
+    /* space-between : 项目间距相等 */
+    /* space-around : 项目间距相等，项目与边框间距相等 */
+    justify-content: space-between; /* 左右对齐，剩余项目间距相等 */
+
+
+    padding: 10px;  /* 内边距 */
+    align-items: center; /* 项目垂直居中 */
+}
+
+#container h1{
+    margin: 0; /* 移除默认外边距 */
+    font-weight: bold; /* 加粗字体 */
+    color: #ffffff; /* 白色字体 */
+    font-family: '楷体'; /* 字体 */
+}
+
+#container a{
+    color: #ffffff; /* 白色字体 */
+    text-decoration: none; /* 无下划线 */
+    font-family: '楷体'; /* 字体 */
+    margin: 0 10px;
+}
+
+#menu{
+    box-sizing: auto;
+    background-color: #ffffff; /* 白色背景 */
+    padding: 10px;  /* 内边距 */
+    align-items: center; /* 项目垂直居中 */
+}
